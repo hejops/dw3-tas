@@ -4,25 +4,31 @@ when to advance text:
 - on the frame before the last character appears
 - on the frame before a Yes/No box appears
 
-each step is 8 frames
+each step is 8 frames (16 in overworld)
+
+encounters seem to be step-based; i.e. an encounter WILL happen every n frames, and i haven't been able to avoid it
+they are determined by the address 0C61. the max i've seen is 39. every step in an area with encounters decreases this value by 1-2. certain actions "refill" this address, including changing area (e.g. stairs, entering houses), entering/exiting the overworld, and finishing/fleeing a battle. note: exiting overworld (i.e. entering town) decreases this value, almost always by 12. i still don't know *how* the refill works, so I've just been waiting frames and inputting on the frame that causes the biggest refill. true optimisation would involve determining minimum number of steps required in each area, the corresponding minimum 0C61 value required, and the minimum number of frames waited.
+
+battle fade animation test (take step -> right after red zone)
+- 124: windmill, arrow down, vertical/horizontal stripe, messy stripe, spiral
+- 126: rectangle
+
+flee battle = 47 frames
 
 Return = level 7
 Outside = level 14
 
-- Aliahan: STRSeed? (very out of the way), $Copper Sword (that's the default weapon isn't it?), no party?
-- Promontory Cave: none
-- Najimi Tower: ThiefKey
+- Aliahan: talk to king, party: Dealer (New Town), Cleric, Wizard, buy 2 WarpWing, sell something
+- Reeve: (E) visit (E)
+- Promontory Cave: pass through (E)
+- Najimi Tower: ThiefKey, warp to Reeve
 - Reeve: MagicBomb, $Sickle 320
 - Tempt Cave: blow up wall
-- Romaly: $Spear 650, Token, (get 2 WarpWings latest by now?), initiate Kandar quest
-- Pachisi: trigger glitch, Wooden Boomerang?
+- Romaly: $Spear 650, (get 2 WarpWings latest by now?), initiate Kandar quest
+- Pachisi: trigger glitch? (apparently no STR down here? if so, go to Ashalam Pachisi instead), Wooden Boomerang?
 - Kazave: visit
 - Kandar: Boomerang OHKO?, warp to Romaly
-- Romaly: become King, quit being King, [warp to Kazave
-- Noaniels: visit
-- Noaniels Cave: Dream Ruby
-- Elvanham: Wake Dust, warp to Noaniels
-- Noaniels: $Steel Sword 1300] -> Noaniels is entirely optional
+- Romaly: become King (sleep), quit being King
 - Norud's Tunnel: pass through
 - Ashalam: visit
 - Isis: $Iron Axe 2500, Starry Bracelet?
