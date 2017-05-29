@@ -25,7 +25,7 @@ Outside = level 14
 - Reeve: MagicBomb, $Sickle 320
 - Tempt Cave: blow up wall
 - Romaly: $Spear 650, (get 2 WarpWings latest by now?), initiate Kandar quest
-- Pachisi: trigger glitch? (apparently no STR down here? if so, go to Ashalam Pachisi instead), Wooden Boomerang?
+- Pachisi: trigger glitch?, Wooden Boomerang for Kandar group
 - Kazave: visit
 - Kandar: Boomerang OHKO?, warp to Romaly
 - Romaly: become King (sleep), quit being King
